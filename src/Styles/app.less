@@ -1,0 +1,364 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.App {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.body-height {
+    flex: 1;
+}
+html {
+    font-family: @font-family;
+    font-size: @base-font-size; //setting base font size fluidly
+}
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    body {
+        font-size: 21px;
+    }
+}
+.full-width {
+    width: 100%;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.clear-both {
+    clear: both;
+}
+.center-align {
+    text-align: center;
+}
+.left-align {
+    text-align: left;
+}
+.right-align {
+    text-align: right;
+}
+.place-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+.mt-s {
+    margin-top: @margin-s;
+}
+.mt {
+    margin-top: @margin;
+}
+.mt-l {
+    margin-top: @margin-l;
+}
+.mt-xl {
+    margin-top: @margin-xl;
+}
+.mt-xxl {
+    margin-top: @margin-xxl;
+}
+.mt-xxxl {
+    margin-top: @margin-xxxl;
+}
+.mt-xxxxl {
+    margin-top: @margin-xxxxl;
+}
+.mt-xxxxxl {
+    margin-top: @margin-xxxxxl;
+}
+.mr-s {
+    margin-right: @margin-s;
+}
+.mr {
+    margin-right: @margin;
+}
+.mr-l {
+    margin-right: @margin-l;
+}
+.mr-xl {
+    margin-right: @margin-xl;
+}
+.mr-xxl {
+    margin-right: @margin-xxl;
+}
+.mr-xxxl {
+    margin-right: @margin-xxxl;
+}
+.mr-xxxxl {
+    margin-right: @margin-xxxxl;
+}
+.mr-xxxxxl {
+    margin-right: @margin-xxxxxl;
+}
+.no-mb {
+    margin-bottom: 0px;
+}
+.mb-s {
+    margin-bottom: @margin-s;
+}
+.mb {
+    margin-bottom: @margin;
+}
+.mb-l {
+    margin-bottom: @margin-l;
+}
+.mb-xl {
+    margin-bottom: @margin-xl;
+}
+.mb-xxl {
+    margin-bottom: @margin-xxl;
+}
+.mb-xxxl {
+    margin-bottom: @margin-xxxl;
+}
+.mb-xxxxl {
+    margin-bottom: @margin-xxxxl;
+}
+.mb-xxxxxl {
+    margin-bottom: @margin-xxxxxl;
+}
+.ml-s {
+    margin-left: @margin-s;
+}
+.ml {
+    margin-left: @margin;
+}
+.ml-l {
+    margin-left: @margin-l;
+}
+.ml-xl {
+    margin-left: @margin-xl;
+}
+.ml-xxl {
+    margin-left: @margin-xxl;
+}
+.ml-xxxl {
+    margin-left: @margin-xxxl;
+}
+.ml-xxxxl {
+    margin-left: @margin-xxxxl;
+}
+.ml-xxxxxl {
+    margin-left: @margin-xxxxxl;
+}
+.pt-s {
+    padding-top: @padding-s;
+}
+.pt {
+    padding-top: @padding;
+}
+.pt-l {
+    padding-top: @padding-l;
+}
+.pt-xl {
+    padding-top: @padding-xl;
+}
+.pt-xxl {
+    padding-top: @padding-xxl;
+}
+.pt-xxxl {
+    padding-top: @padding-xxxl;
+}
+.pt-xxxxl {
+    padding-top: @padding-xxxxl;
+}
+.pr-s {
+    padding-right: @padding-s;
+}
+.pr {
+    padding-right: @padding;
+}
+.pr-l {
+    padding-right: @padding-l;
+}
+.pr-xl {
+    padding-right: @padding-xl;
+}
+.pr-xxl {
+    padding-right: @padding-xxl;
+}
+.pr-xxxl {
+    padding-right: @padding-xxxl;
+}
+.pr-xxxxl {
+    padding-right: @padding-xxxxl;
+}
+.pb-s {
+    padding-bottom: @padding-s;
+}
+.pb {
+    padding-bottom: @padding;
+}
+.pb-l {
+    padding-bottom: @padding-l;
+}
+.pb-xl {
+    padding-bottom: @padding-xl;
+}
+.pb-xxl {
+    padding-bottom: @padding-xxl;
+}
+.pb-xxxl {
+    padding-bottom: @padding-xxxl;
+}
+.pb-xxxxl {
+    padding-bottom: @padding-xxxxl;
+}
+.pl-s {
+    padding-left: @padding-s;
+}
+.pl {
+    padding-left: @padding;
+}
+.pl-l {
+    padding-left: @padding-l;
+}
+.pl-xl {
+    padding-left: @padding-xl;
+}
+.pl-xxl {
+    padding-left: @padding-xxl;
+}
+.pl-xxxl {
+    padding-left: @padding-xxxl;
+}
+.pl-xxxxl {
+    padding-left: @padding-xxxxl;
+}
+.font-weight-300 {
+    font-weight: @font-weight-300;
+}
+.font-weight-400 {
+    font-weight: @font-weight-400;
+}
+.font-weight-500 {
+    font-weight: @font-weight-500;
+}
+.font-weight-700 {
+    font-weight: @font-weight-700;
+}
+.font-weight-900 {
+    font-weight: @font-weight-900;
+}
+.wrap-width {
+    display: inline-block;
+}
+.display-block {
+    display: block;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.cursor-default {
+    cursor: default;
+}
+.flex-container {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.avatar-text {
+    color: @primary-color;
+    font-weight: @font-weight-700;
+    background-color: lighten(@primary-color, 46%);
+}
+.no-text-decoration {
+    text-decoration: none;
+    color: inherit;
+}
+.primary-color {
+    color: @primary-color;
+}
+.primary-color-bg {
+    background-color: @primary-color;
+}
+.success-color {
+    color: @success-color;
+}
+.error-color {
+    color: @error-color;
+}
+.disabled-color {
+    color: @text-color-secondary-light;
+}
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after {
+    border-top: 1px solid #d5d5d5;
+}
+.ant-select {
+    padding: 8px !important;
+    background-color: @primary-light-color !important;
+    border: @border-input !important;
+    border-radius: 8px;
+}
+.ant-select-selector {
+    background-color: @primary-light-color !important;
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: @primary-light-color 2px 2px 4px 1px inset, @primary-light-color -2px -2px 3px 4px inset !important;
+}
+.ant-table table {
+    font-size: @font-size-s;
+}
+.ant-progress-status-success .ant-progress-inner:not(.ant-progress-circle-gradient) .ant-progress-circle-path {
+    stroke: @primary-color;
+}
+// Media
+@media (min-width: @breakpoint-tab + 1) {
+    .laptop-hide {
+        display: none;
+    }
+    .laptop-column {
+        flex-direction: column;
+    }
+}
+@media (max-width: @breakpoint-tab) {
+    .tab-hide {
+        display: none;
+    }
+    .tab-column {
+        flex-direction: column;
+    }
+}
+@media (max-width: @breakpoint-mob) {
+    .mob-hide {
+        display: none;
+    }
+    .mob-column {
+        flex-direction: column;
+    }
+}

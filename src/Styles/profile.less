@@ -1,0 +1,183 @@
+.profile-menu-wrapper {
+    flex: 0 0 18%;
+    min-width: 220px;
+    max-width: 280px;
+    margin-bottom: 60px;
+}
+.profile-forms-wrapper {
+    flex: 0 0 50%;
+    min-width: 300px;
+    max-width: 790px;
+}
+@media (max-width: @breakpoint-tab) {
+    .profile-forms-wrapper {
+        flex: 0 0 65%;
+    }
+}
+
+// Forms
+.profile-form h1 {
+    font-size: @font-size-xl;
+    letter-spacing: 0.1px;
+    background-color: inherit;
+}
+.profile-pic {
+    border-radius: 50% !important;
+    background-color: white;
+}
+.pic-upload-button {
+    margin-left: calc(50% - (151.234px / 2));
+}
+.form-item * {
+    letter-spacing: 0.2px;
+}
+.form-input {
+    font-size: @font-size-s;
+    letter-spacing: 0.2px;
+    border: @border-input;
+}
+.form-input:hover {
+    border: solid 1px @primary-color !important;
+}
+
+// Profile pic
+.delete-pic-icon {
+    font-size: @font-size-s;
+    color: @primary-color;
+}
+
+// Enrolled Courses
+.enrolled-courses {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.enrolled-course {
+    width: 220px;
+}
+.enrolled-course h2 {
+    font-size: @font-size-l;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.enrolled-courses-wrapper {
+    margin-right: -35%;
+}
+.profile-course-card-img-wrapper {
+    text-align: center;
+}
+.profile-course-card-img-wrapper img {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: @border-radius-base @border-radius-base 0 0;
+}
+.continue-learning-btn {
+    height: 40px;
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+    margin-top: calc((@margin + @margin-l) / 2);
+}
+.continue-learning-btn:hover {
+    color: @text-color-secondary-dark;
+}
+// rating
+.course-rating-wrapper {
+    margin-top: calc((@margin + @margin-l) / 2);
+    background-color: @darker-white-color;
+    border-top: @border-hr-light;
+}
+.course-rating-heading {
+    font-size: @font-size-s;
+}
+.course-rate-wrapper {
+    margin-top: -@margin;
+    font-size: 17px;
+}
+.heading-rating-modal {
+    font-size: @font-size-xl;
+}
+.subheading-rating-modal {
+    font-size: @font-size-s;
+}
+.rating-star-modal {
+    font-size: @font-size-xxxl;
+}
+.rating-modal-form .ant-row {
+    margin-bottom: 0;
+}
+.feedback-options-wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.feedback-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lighten(@secondary-color, 45%);
+    border: solid 2px darken(@secondary-color, 10%);
+    font-size: @font-size-s !important;
+    color: darken(@secondary-color, 10%);
+    border-radius: @border-radius-base;
+    padding: @padding;
+    cursor: pointer;
+    overflow: visible !important;
+}
+.selected_feedback-option {
+    background-color: @primary-color;
+    border: @primary-color;
+    color: white;
+}
+.feedback-option:hover {
+    background-color: @primary-color;
+    border: @primary-color;
+    color: white;
+}
+.feedback-option:focus {
+    background-color: @primary-color;
+    border: @primary-color;
+    color: white;
+}
+@media (max-width: 1050px) {
+    .enrolled-courses-wrapper {
+        margin-right: -25%;
+    }
+    .enrolled-course {
+        width: 200px;
+    }
+}
+@media (max-width: @breakpoint-tab) {
+    .enrolled-courses-wrapper {
+        margin-right: 0%;
+    }
+    .enrolled-course {
+        width: 220px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 628px) {
+    .enrolled-courses {
+        justify-content: center;
+    }
+}
+
+// Questions Asked
+.profile-ques-title {
+    font-size: @font-size-s;
+    color: @primary-second-color;
+    letter-spacing: 0.1px;
+}
+.profile-question-icons {
+    margin-top: -6px;
+    font-size: @font-size-xs;
+    color: @text-color-secondary-extra-light;
+}
+
+// Rewards and Referral Code
+.reward-points-text {
+    font-size: @font-size-s;
+}

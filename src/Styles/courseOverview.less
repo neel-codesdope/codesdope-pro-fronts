@@ -1,0 +1,199 @@
+//Heading
+.course-overview-head-wrapper {
+    width: 60%;
+    max-width: 1200px;
+}
+.course-overview-main-heading {
+    font-size: @font-size-xxxl;
+    font-weight: @font-weight-500;
+    letter-spacing: 1px;
+}
+.course-overview-head-subtitle {
+    font-size: @font-size-l;
+    letter-spacing: 0.5px;
+}
+.course-overview-head-features-icon {
+    border-radius: 50%;
+    font-size: @font-size-s;
+    color: @primary-color;
+}
+.course-overview-head-features-detail {
+    font-size: @font-size-s;
+}
+// Price
+.course-overview-price-label {
+    font-size: @font-size-l;
+}
+.course-overview-price-currency {
+    font-size: @font-size-l;
+}
+.course-overview-price-money {
+    font-size: @font-size-xl;
+    font-weight: @font-weight-500;
+}
+.course-overview-original-price {
+    font-size: @font-size-s;
+    color: @text-color-secondary-light;
+    text-decoration: line-through;
+    letter-spacing: 0.5px;
+}
+.course-overview-tax {
+    font-size: @font-size-xs;
+    color: @text-color-secondary-light;
+}
+// .course-overview-offer-text {
+// }
+// .course-overview-offer-deadline {
+//     color: @success-color;
+// }
+
+// Buttons
+.course-overview-head-buttons Button {
+    width: 200px;
+    height: 45px;
+    letter-spacing: 0.5px;
+    font-size: @font-size-s;
+    font-weight: @font-weight-500;
+}
+.course-overview-head-info-wrapper {
+    width: 60%;
+    max-width: 1200px;
+    justify-content: space-around;
+}
+.course-overview-head-info {
+    flex: 1;
+}
+.course-overview-head-info-value {
+    font-size: @font-size-xxl;
+    color: @primary-color;
+}
+.course-overview-head-info-add {
+    font-size: @font-size-xl;
+}
+.course-overview-head-info-key {
+    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    font-size: @font-size-s;
+    letter-spacing: 0.1px;
+}
+// Features
+.course-overview-features-wrapper {
+    width: 80%;
+    max-width: 1600px;
+}
+.course-overview-features-heading {
+    font-size: @font-size-xxl;
+    letter-spacing: 1px;
+}
+.course-overview-feature {
+    flex: 33.3%;
+}
+.course-overview-feature-icon-container {
+    @course-overview-feature-icon-container-dim: 74px;
+    width: @course-overview-feature-icon-container-dim;
+    height: @course-overview-feature-icon-container-dim;
+    border-radius: 50%;
+    .course-overview-feature-icon{
+        width: (@course-overview-feature-icon-container-dim/2);
+        height: (@course-overview-feature-icon-container-dim/2);
+    }
+}
+.course-overview-feature-title {
+    font-size: @font-size-l;
+    font-weight: @font-weight-400;
+    letter-spacing: 0.4px;
+}
+.course-overview-feature-detail {
+    font-size: @font-size-s;
+    letter-spacing: 0.2px;
+}
+// Curriculum
+.course-overview-curriculum-wrapper {
+    width: 50%;
+    max-width: 1000px;
+}
+.course-overview-curriculum {
+    font-size: @font-size-s;
+    padding: 10px;
+}
+.course-overview-subtopic {
+    font-size: @font-size-s;
+}
+.ant-collapse-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.course-overview-curriculum .ant-collapse-item:last-of-type {
+    border-bottom: 0 !important;
+}
+.course-overview-curriculum ul {
+    margin: 0;
+}
+.course-overview-curriculum ul li {
+    font-size: @font-size-s;
+    padding: 5px;
+    list-style-type: none;
+}
+.course-subtopic-type {
+    margin-left: -20px;
+    margin-right: 8px;
+    color: @text-color-secondary-light;
+}
+.course-subtopic-type-disabled {
+    color: @text-color-secondary-extra-light;
+}
+// FAQ
+.course-overview-faq-wrapper {
+    width: 50%;
+    max-width: 1000px;
+}
+.course-overview-faq {
+    background-color: inherit;
+    font-size: @font-size-xs;
+    letter-spacing: 0.2px;
+}
+.course-overview-faq-wrapper .ant-collapse {
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.course-overview-faq-wrapper .ant-collapse-content {
+    border-top: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+.course-overview-faq-wrapper .ant-collapse-item:last-of-type {
+    border-bottom: 0 !important;
+}
+// Media
+@media (max-width: 1000px) {
+    .course-overview-head-wrapper {
+        width: 80%;
+    }
+    .course-overview-head-info-wrapper {
+        width: 80%;
+    }
+}
+@media (max-width: @breakpoint-tab) {
+    .course-overview-head-wrapper {
+        width: 90%;
+    }
+    .course-overview-head-buttons {
+        text-align: center;
+    }
+    .course-overview-head-info-wrapper {
+        width: 90%;
+    }
+    .course-overview-curriculum-wrapper {
+        width: 70%;
+    }
+    .course-overview-faq-wrapper {
+        width: 70%;
+    }
+}
+@media (max-width: @breakpoint-mob) {
+    .course-overview-head-info-wrapper {
+        width: 60%;
+        flex-direction: column;
+    }
+    .course-overview-curriculum-wrapper {
+        width: 95%;
+    }
+    .course-overview-faq-wrapper {
+        width: 90%;
+    }
+}

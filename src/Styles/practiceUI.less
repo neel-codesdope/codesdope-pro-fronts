@@ -1,0 +1,342 @@
+.practice_ui h2 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+.practice_ui h3 {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+.practice_ui h4 {
+    margin-top: 1.05rem;
+    font-size: 1.05rem;
+}
+.practice_ui h5 {
+    margin-top: 0.96rem;
+    font-size: 0.96rem;
+}
+.practice_ui h6 {
+    margin-top: 0.95rem;
+    font-size: 0.9rem;
+}
+
+.practice_ui h2,
+.practice_ui h3,
+.practice_ui h4,
+.practice_ui h5,
+.practice_ui h6 {
+    color: @primary-dark-color;
+}
+.practice_ui p {
+    font-size: 0.85rem;
+    color: lighten(@primary-dark-color, 14%);
+    line-height: @summary-element-line-height;
+}
+.practice_ui .p-heading {
+    margin: 1.1rem 0 0.5rem;
+    font-size: 0.96rem;
+    font-weight: @font-weight-500;
+    color: @primary-dark-color;
+}
+.practice_ui .p-title {
+    margin: 0.6rem 0 0.3rem;
+    font-size: 0.85rem;
+    font-weight: @font-weight-500;
+    color: @primary-dark-color;
+}
+.practice_ui .file-wrapper {
+    filter: @summary-element-non-box-shadow;
+    margin: 1.6rem auto;
+}
+.practice_ui .p-filename {
+    margin: 0.6rem 0 0;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: @font-weight-500;
+    color: @primary-dark-color;
+    background-color: @summary-component-background-color;
+    border: @summary-element-border;
+    border-radius: @border-radius-base @border-radius-base 0 0;
+}
+.practice_ui .div-file {
+    padding: 0.5rem 0.8rem;
+    background-color: @white-color;
+    border: @summary-element-border;
+    border-radius: 0 0 @border-radius-base @border-radius-base;
+    font-size: 0.77rem;
+    white-space: pre;
+}
+.practice_ui .p-important {
+    margin: 1.3rem 0;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+    color: lighten(@primary-dark-color, 14%);
+    background-color: lighten(@primary-color, 52%);
+    border: solid 2px lighten(@primary-color, 48%);
+    border-radius: @border-radius-base;
+    line-height: @summary-element-line-height;
+    box-shadow: @summary-element-box-shadow;
+}
+.practice_ui hr {
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+    border-top: @border-hr-light;
+}
+.practice_ui .hr-dashed {
+    border: @summary-element-border-dashed;
+}
+.practice_ui u {
+    border-bottom: 3px solid darken(@secondary-color, 5%);
+    text-decoration: none;
+}
+.practice_ui mark {
+    background-color: @secondary-color;
+}
+.practice_ui del {
+    text-decoration-color: darken(@secondary-color, 10%);
+    text-decoration-thickness: 2px;
+}
+.practice_ui a {
+    text-decoration: none;
+    box-shadow: @text-underline-box-shadow;
+    color: lighten(@primary-dark-color, 14%);
+}
+.practice_ui a:hover {
+    box-shadow: @text-underline-box-shadow-hover;
+}
+.practice_ui code {
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    color: darken(@secondary-color, 13%);
+    background-color: lighten(@secondary-color, 48%);
+    border: darken(@secondary-color, 5%) 1px solid;
+    border-radius: 4px;
+}
+.practice_ui pre {
+    font-size: 0.7rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    color: @white-color;
+    background-color: @code-background-color;
+    border-radius: @border-radius-base;
+}
+.practice_ui pre code {
+    padding: 0 !important;
+    background-color: inherit;
+    color: @code-text-color;
+    border: none;
+}
+.practice_ui .pre-no-code {
+    code {
+        color: @text-color-secondary-medium;
+    }
+    margin: 0.3rem 0 1.2rem;
+    padding: 1rem;
+    background-color: @summary-component-background-color;
+    border: @summary-element-border;
+    border-radius: @border-radius-base;
+}
+.practice_ui blockquote {
+    margin: 1.3rem 0;
+    padding: 0.45rem 0.62rem;
+    background-color: lighten(@primary-color, 52%);
+    border-left: solid 3px @primary-color;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: lighten(@primary-dark-color, 14%);
+    line-height: @summary-element-line-height;
+    border-radius: @border-radius-base;
+}
+.practice_ui figure {
+    margin: 1.6rem 2rem;
+    padding: 1rem 0 0 0;
+    text-align: center;
+    border: @border-hr-light;
+    border-radius: @border-radius-base;
+}
+.practice_ui figcaption {
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: @font-weight-500;
+    color: lighten(@primary-dark-color, 30%);
+    border-top: @border-hr-light;
+    p {
+        margin-bottom: 0;
+    }
+}
+.practice_ui {
+    img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+.practice_ui ul {
+    margin: 1.3rem 0;
+}
+.practice_ui ol {
+    margin: 1.3rem 0;
+}
+.practice_ui li {
+    margin-bottom: 0.6rem;
+    font-size: 0.85rem;
+    color: lighten(@primary-dark-color, 14%);
+}
+.practice_ui {
+    table {
+        margin: 1.6rem auto;
+        overflow: auto;
+        border: none;
+        box-shadow: @summary-element-box-shadow;
+        width: 100%;
+        border-collapse: separate !important;
+        border-spacing: 0;
+        border-radius: @border-radius-base;
+        tr:first-child {
+            th:first-child {
+                border-top-left-radius: @border-radius-base;
+            }
+        }
+
+        tr:first-child {
+            th:last-child {
+                border-top-right-radius: @border-radius-base;
+            }
+        }
+        tr:last-child {
+            td:first-child {
+                border-bottom-left-radius: @border-radius-base;
+            }
+        }
+
+        tr:last-child {
+            td:last-child {
+                border-bottom-right-radius: @border-radius-base;
+            }
+        }
+        tr:hover {
+            background-color: darken(@primary-light-color, 2%);
+        }
+        td {
+            border: @border-table-light;
+        }
+        th {
+            border: @border-table-header;
+        }
+    }
+}
+.practice_ui th {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.76rem;
+    letter-spacing: 0.5px;
+    font-weight: @font-weight-500;
+    color: @white-color;
+    background-color: @primary-color;
+}
+.practice_ui table td {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+    color: lighten(@primary-dark-color, 14%);
+}
+.practice_ui caption {
+    caption-side: bottom;
+    padding: 0.4rem 0 0 0;
+    font-size: 0.76rem;
+    font-weight: @font-weight-500;
+    text-align: center;
+}
+// table without header
+.practice_ui .table-no-header {
+    width: 100%;
+    tr:first-child {
+        td:first-child {
+            border-top-left-radius: @border-radius-base;
+        }
+    }
+
+    tr:first-child {
+        td:last-child {
+            border-top-right-radius: @border-radius-base;
+        }
+    }
+    tr:last-child {
+        td:first-child {
+            border-bottom-left-radius: @border-radius-base;
+        }
+    }
+
+    tr:last-child {
+        td:last-child {
+            border-bottom-right-radius: @border-radius-base;
+        }
+    }
+}
+// table without rows
+.practice_ui .table-no-row {
+    width: 50%;
+    tr:first-child {
+        td:first-child {
+            border-top-left-radius: @border-radius-base;
+        }
+    }
+    tr:first-child {
+        td:last-child {
+            border-top-right-radius: @border-radius-base;
+        }
+    }
+    tr:last-child {
+        td:first-child {
+            border-bottom-left-radius: @border-radius-base;
+        }
+    }
+
+    tr:last-child {
+        td:last-child {
+            border-bottom-right-radius: @border-radius-base;
+        }
+    }
+    tr:hover {
+        background-color: inherit !important;
+    }
+    td:hover {
+        background-color: darken(@primary-light-color, 2%);
+    }
+}
+// code
+.practice_ui .code-multiple-lang ul {
+    list-style: none;
+    margin: 1.3rem 0 0 0;
+    padding: 0;
+
+    li:not(:first-of-type) {
+        margin-left: 3px;
+    }
+}
+.practice_ui .code-multiple-lang ul li {
+    display: inline-block;
+    color: @white-color;
+    font-size: 0.77rem;
+    font-weight: @font-weight-500;
+    letter-spacing: 0.6px;
+    background-color: @primary-color;
+    padding: 0.1rem 0.8rem;
+    margin-bottom: 0;
+    border-radius: @border-radius-base @border-radius-base 0 0;
+    cursor: pointer;
+}
+.practice_ui .code-multiple-lang ul li.active-tab {
+    color: lighten(@primary-color, 30%);
+    background-color: @code-background-color;
+}
+.practice_ui .code-multiple-lang pre {
+    margin: 0 0 1.3rem 0;
+    padding: 1.2rem 1rem;
+    color: @white-color;
+    background-color: @code-background-color;
+    border-radius: 0 @border-radius-base @border-radius-base @border-radius-base;
+    display: none;
+}
+.practice_ui .code-multiple-lang pre.active-code {
+    display: block;
+}

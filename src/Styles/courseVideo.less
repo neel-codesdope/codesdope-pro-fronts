@@ -1,0 +1,38 @@
+.video-loading-wrapper {
+    background-color: @code-background-color;
+    color: white;
+    font-size: @font-size-xxxxl;
+}
+.video-error-wrapper {
+    background-color: @code-background-color;
+    color: white;
+    font-size: @font-size-xl;
+}
+// feedback
+.subtopic-feedback-heading {
+    font-size: @font-size-m;
+}
+.subtopic-feedback-smiley {
+    font-size: @font-size-xxxl;
+    transition: all 0.3s;
+}
+.feedback-smiley-happy:hover {
+    color: darken(@success-color, 10%);
+}
+.feedback-smiley-sad:hover {
+    color: darken(@error-color, 10%);
+}
+.subtopic-feedback-loading {
+    font-size: @font-size-xxxl;
+}
+.feedback-response {
+    font-size: @font-size-m;
+    background-color: lighten(@success-color, 40%);
+    border: solid 2px lighten(@success-color, 30%);
+    border-radius: @border-radius-base;
+}
+.subtopic-feedback-form {
+    width: 70%;
+    min-width: 300px;
+    max-width: 600px;
+}

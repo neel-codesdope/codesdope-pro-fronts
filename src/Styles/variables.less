@@ -1,0 +1,110 @@
+@base-font-size: calc(15px + (21 - 15) * ((100vw - 400px) / (1600 - 400))); // base font
+@layout-header-background: white;
+@layout-header-height: 50px;
+@layout-header-padding: 0 20px;
+@primary-color: #802bb1;
+@primary-second-color: #802392;
+@secondary-color: #ffd400;
+@primary-dark-color: #2d283e;
+@primary-light-color: #f5f5f5;
+@secondary-light-color: lighten(@primary-color, 35%);
+@background-light-color: #f1f1f1;
+@white-color: #ffffff;
+@darker-white-color: #eeeeee;
+@text-color-secondary-dark: rgba(31, 31, 31);
+@text-color-secondary-medium: rgba(31, 31, 31, 0.8);
+@text-color-secondary-light: rgba(0, 0, 0, 0.6);
+@text-color-secondary-extra-light: rgba(0, 0, 0, 0.4);
+@summary-component-background-color: #ebebeb;
+@code-background-color: #282828;
+@code-background-color-secondary: #ebebec;
+@code-text-color: #d5dce7;
+@success-color: #568f5d;
+@border-color-base: #802bb1;
+@scrollbar-color: #565656;
+// hover
+@primary-color-hover: lighten(@primary-color, 10%);
+// border
+@border-radius-base: 8px;
+@border-hr: 1px solid rgba(0, 0, 0, 0.2) !important;
+@border-hr-light: 1px solid #dadada;
+@border-dark: 1px solid #898989;
+@border-input: 1px solid #aaa;
+@border-table-light: 0.5px solid #dadada;
+@border-table-header: 0.5px solid lighten(@primary-color, 20%);
+@disabled-btn-border: solid 1px #bebebe;
+//button
+@disabled-btn-bg-color: #d9d9d9;
+@disabled-btn-color: #787878;
+
+@font-family: 'Roboto', sans-serif;
+@font-family-monospace: 'Courier Prime', monospace;
+@menu-highlight-color: @primary-color;
+@menu-item-group-title-color: @primary-color;
+@menu-inline-toplevel-item-height: auto;
+@menu-item-height: auto;
+@margin-s: 5px;
+@margin: 10px;
+@margin-l: 1.4rem;
+@margin-xl: 2.1rem;
+@margin-xxl: 2.5rem;
+@margin-xxxl: 3.9rem;
+@margin-xxxxl: 5.1rem;
+@margin-xxxxxl: 6.8rem;
+@padding-s: 5px;
+@padding: 10px;
+@padding-l: 1rem;
+@padding-xl: 1.8rem;
+@padding-xxl: 2.5rem;
+@padding-xxlp: 3rem;
+@padding-xxxl: 3.7rem;
+@padding-xxxxl: 5rem;
+@font-size-xxs: 0.65rem; // very small font (footer)
+@font-size-xs: 0.7rem; // very small font (footer)
+@font-size-s: 0.8rem; // normal font on homepage
+@font-size-m: 0.9rem; // normal font on homepage
+@font-size-mp: 0.92rem; // normal font on homepage
+@font-size-l: 0.95rem; // normal font on homepage
+@font-size-xl: 1.2rem; // h3
+@font-size-xlp: 1.55rem; // h3
+@font-size-xxl: 1.8rem; // h2
+@font-size-xxxl: 2.1rem; // h1
+@font-size-xxxxl: 3.5rem;
+@font-weight-300: 300;
+@font-weight-400: 400;
+@font-weight-500: 500;
+@font-weight-700: 700;
+@font-weight-900: 900;
+// progress
+@progress-default-color: @primary-color;
+@progress-remaining-color: #dadada;
+// forms
+@input-placeholder-color: @text-color-secondary-extra-light;
+@input-border-color: #efefef;
+@input-hover-border-color: #efefef;
+@input-padding-vertical-base: 12px;
+@input-color: @text-color-secondary-medium;
+@input-bg: @primary-light-color;
+@select-border-color: #efefef;
+// rate
+@rate-star-bg: #cacaca;
+@rate-star-color: @secondary-color;
+// media query breakpoints
+@breakpoint-mob: 480px; // mobile
+@breakpoint-tab: 768px; // tablet
+@breakpoint-screen-s: 1024px; // small screen laptop
+@breakpoint-screen-l: 1200px; // large screen desktops
+@breakpoint-screen-xl: 1600px; // extra large screen desktops
+//UI (summary)
+@text-underline-box-shadow: inset 0 -0.4rem @secondary-color, inset 0 0 @secondary-color;
+@text-underline-box-shadow-hover: inset 0 -0.8rem @secondary-color, inset 0 0 @secondary-color;
+@summary-element-box-shadow: -0.5em -0.4em 0.5em #fff, 0.3em 0.3em 0.7em #c8c8c8;
+@summary-element-non-box-shadow: drop-shadow(-0.5em -0.5em 0.5em #fff) drop-shadow(0.2em 0.2em 0.4em #c8c8c8);
+@summary-element-line-height: 1.35rem;
+@summary-element-border: 1px solid #d2d2d2;
+@summary-element-border-dashed: 1px dashed #d2d2d2;
+//UI (non summary)
+@element-box-shadow: 0.3em 0.3em 0.7em #c8c8c8;
+@element-non-linear-shadow: drop-shadow(0.3em 0.3em 0.7em #c8c8c8);
+//UI (Tag)
+@border-radius-tag: 4px;
